@@ -1,6 +1,4 @@
-import React from "react";
-import { Card, CardBody, CardTitle, CardSubtitle, CardText, Col } from "reactstrap";
-import Fade from "react-reveal/Fade";
+import { Card, CardBody, CardSubtitle, CardText, CardTitle, Col } from "reactstrap";
 import { ExperienceType } from "../types/sections";
 
 const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }: ExperienceType) => {
@@ -20,8 +18,11 @@ const ExperienceCard = ({ companyLogo, company, role, date, desc, descBullets }:
               width: "8rem",
               height: "8rem",
               borderRadius: "50%",
+              zIndex: 1, // Ensure the image is above the o
+              // Adjust the alpha value for darkness
+
             }}
-            className="shadow mb-3"
+            className="shadow mb-3 bg-gray-800 rounded-full relative"
             alt={companyLogo}
           />
           <CardTitle tag="h4" className="mb-2">

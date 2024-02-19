@@ -1,9 +1,8 @@
-import React from "react";
-import { Card, Col, Row, Container } from "reactstrap";
+import { Card, Col, Container, Row } from "reactstrap";
 import { GithubUserType } from "../types";
 import SocialLinks from "./SocialLinks";
 
-const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
+const GithubProfileCard = ({  bio, location }: GithubUserType) => {
   return (
     <Card className="section-lg bg-gradient-info shadow-lg border-0">
       <Container className="">
@@ -11,7 +10,7 @@ const GithubProfileCard = ({ avatar_url, bio, location }: GithubUserType) => {
           <Row className="">
             <Col className="order-lg-2" lg="4">
               <img
-                src={avatar_url}
+                src="/img/icons/common/Bilel.jpeg"
                 style={{ width: "200px" }}
                 alt=""
                 className="rounded-circle img-center img-fluid shadow shadow-lg--hover mb-4"
